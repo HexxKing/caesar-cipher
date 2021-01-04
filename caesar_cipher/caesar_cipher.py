@@ -9,13 +9,8 @@ def encrypt(plain_text, shift):
   for char in plain_text:
     
     # no alphabetic characters
-    if char == "1!":
+    if not char.isalpha():
       encrypted_str += char
-
-    # keep spaces
-    if char == " ":
-      encrypted_str += char
-
 
     #encrypt uppercase
     if (char.isupper()):
