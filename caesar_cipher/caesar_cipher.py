@@ -16,10 +16,9 @@ def encrypt(plain_text, shift):
     if (char.isupper()):
       encrypted_str += chr((ord(char) + shift - 65) % 26 + 65)
 
+    #encrypt lowercase
     if (char.islower()):
-      #encrypt lowercase
       encrypted_str += chr((ord(char) + shift - 97) % 26 + 97)
-
 
   return encrypted_str
 
