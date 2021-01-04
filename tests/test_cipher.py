@@ -7,28 +7,28 @@ def test_encrypt_shift_1():
     assert actual == expected
 
 
-# def test_encrypt_shift_10():
-#     actual = encrypt("apple", 10)
-#     expected = "kzzvo"
-#     assert actual == expected
+def test_encrypt_shift_10():
+    actual = encrypt("apple", 10)
+    expected = "kzzvo"
+    assert actual == expected
 
 
-# def test_encrypt_shift_20():
-#     actual = encrypt("apple", 20)
-#     expected = "ujjfy"
-#     assert actual == expected
+def test_encrypt_shift_20():
+    actual = encrypt("apple", 20)
+    expected = "ujjfy"
+    assert actual == expected
 
 
-# def test_uppercase():
-#     actual = encrypt("BANANA", 10)
-#     expected = "LKXKXK"
-#     assert actual == expected
+def test_uppercase():
+    actual = encrypt("BANANA", 10)
+    expected = "LKXKXK"
+    assert actual == expected
 
 
-# def test_with_whitespace():
-#     actual = encrypt("apples and bananas", 1)
-#     expected = "bqqmft boe cbobobt"
-#     assert actual == expected
+def test_with_whitespace():
+    actual = encrypt("apples and bananas", 1)
+    expected = "bqqmft boe cbobobt"
+    assert actual == expected
 
 
 # def test_with_non_alpha():
